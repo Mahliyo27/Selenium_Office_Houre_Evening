@@ -1,4 +1,4 @@
-package com.cydeo.tests;
+package com.cydeo.tests.day01;
 
 import com.google.common.base.Verify;
 import io.github.bonigarcia.wdm.WebDriverManager;

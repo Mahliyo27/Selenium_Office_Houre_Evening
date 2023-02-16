@@ -1,6 +1,6 @@
 package com.cydeo.tests.week03;
 
-import com.cydeo.tests.utilities.VytrackUtility;
+import com.cydeo.utilities.VytrackUtility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

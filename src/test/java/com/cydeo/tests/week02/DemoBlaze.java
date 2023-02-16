@@ -1,6 +1,6 @@
 package com.cydeo.tests.week02;
 
-import com.cydeo.tests.utilities.DemoUtility;
+import com.cydeo.utilities.DemoUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

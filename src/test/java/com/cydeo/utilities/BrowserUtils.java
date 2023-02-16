@@ -84,7 +84,7 @@ public class BrowserUtils {
 
 
     public static void scrollToElement(WebElement element){
-
+        
         Actions actions = new Actions(Driver.getDriver());
 
         actions.scrollToElement(element).perform();
@@ -101,17 +101,17 @@ public class BrowserUtils {
 
 
     }
-
-
+    
+    
     public static void clickElement(WebElement element){
         // I need to have one condition for visibility
-
+        
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(20));
         wait.until(ExpectedConditions.invisibilityOf(element));
         element.click();
-
-
-
+        
+        
+        
     }
 
 
@@ -126,28 +126,33 @@ public class BrowserUtils {
 
 
     }
-
-
-
-
+    
+    
+    
+   
     public static void waitForVisibilityOf(WebElement element){
-
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(20));
         wait.until(ExpectedConditions.invisibilityOf(element));
+        
+        
+        
+    }
+    
+    
+    public static void hover(WebElement element){
 
+        Actions actions = new Actions(Driver.getDriver());
+
+        actions.moveToElement(element).pause(2000).perform();
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
 
 }
